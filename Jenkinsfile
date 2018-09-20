@@ -1,6 +1,7 @@
-cleanWs()
+
 pipeline {
-  agent none 
+  agent none
+  cleanWs()
     stages {
       stage ('Preparation'){
         steps{
