@@ -5,11 +5,12 @@ pipeline {
         steps{
           echo "CHECKING OUT CODE"
         }
+      }
         stage ('Build'){
           steps{
             echo "Building Code"
           }
         }
-      }
-   }
+      
+    }
 }
