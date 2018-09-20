@@ -3,7 +3,9 @@ pipeline {
   agent none
     stages {
       stage ('CleanWorkspace') {
-        steps { cleanWs() }
+        steps { always 
+               { cleanWs()}
+              }
       }
       stage ('Preparation'){
         steps{
