@@ -11,6 +11,19 @@ pipeline {
             echo "Building Code"
           }
         }
+      stage ('Test'){
+          steps{
+            echo "Testing Code"
+          }
+        }
+      stage ('Input'){
+          "Do you want to continue?"
+        }
+      stage ('Deploy'){
+          steps{
+            echo "Deploy Code"
+          }
+        }
       
     }
 }
