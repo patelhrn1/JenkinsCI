@@ -1,6 +1,5 @@
 pipeline {
-  def mvnHome
-  mvnHome = tool "Maven"
+  def mvnHome = tool "Maven"
   agent none 
     stages {
       stage ('Preparation'){
