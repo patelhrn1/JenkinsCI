@@ -1,5 +1,9 @@
 pipeline {
   agent none 
+  node {
+       def mvnHome
+       mvnHome = tool 'Maven'
+       }
     stages {
       stage ('Preparation'){
         steps{
@@ -8,7 +12,6 @@ pipeline {
       }
         stage ('Build'){
           steps{
-            def mvnHome = tool "Maven"
             echo "Building Code"
             echo ${mvnHome}
           }
