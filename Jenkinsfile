@@ -1,3 +1,4 @@
+cleanWs()
 pipeline {
   agent none 
   node {
