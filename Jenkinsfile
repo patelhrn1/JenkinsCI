@@ -1,8 +1,10 @@
 
 pipeline {
   agent none
-  cleanWs()
     stages {
+      stage ('CleanWorkspace') {
+        steps { cleanWs() }
+      }
       stage ('Preparation'){
         steps{
           echo "CHECKING OUT CODE"
