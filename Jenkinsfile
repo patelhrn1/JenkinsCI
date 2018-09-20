@@ -1,7 +1,9 @@
 pipeline {
   stages {
     stage ('Preparation'){
-      echo "CHECKING OUT CODE"
+      steps{
+        echo "CHECKING OUT CODE"
+      }
     }
   }
 }
