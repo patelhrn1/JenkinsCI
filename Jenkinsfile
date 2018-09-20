@@ -1,10 +1,6 @@
 cleanWs()
 pipeline {
   agent none 
-  node {
-       def mvnHome
-       mvnHome = tool 'Maven'
-       }
     stages {
       stage ('Preparation'){
         steps{
