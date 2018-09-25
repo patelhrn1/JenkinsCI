@@ -9,6 +9,7 @@ pipeline {
       }
       stage ('Preparation'){
         steps{
+          properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/patelhrn1/JenkinsCI/'], parameters([gitParameter(branch: '', branchFilter: '.*', defaultValue: '', description: '', name: 'Branch', quickFilterEnabled: false, selectedValue: 'NONE', sortMode: 'NONE', tagFilter: '*', type: 'PT_BRANCH')])])
           echo "CHECKING OUT CODE"
         }
       }
