@@ -1,6 +1,6 @@
 {
     "Resources": {
-        "S3B2LH1K": {
+        "HirenTest": {
             "Type": "AWS::S3::Bucket",
             "Properties": {}
         }
